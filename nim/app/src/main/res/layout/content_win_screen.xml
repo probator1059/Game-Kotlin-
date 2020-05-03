@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_win_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sndo9.robert.nim.WinScreen"
+    tools:showIn="@layout/activity_win_screen"
+    android:background="@drawable/winscreenfixed">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/winScreenLayout"
+        android:visibility="visible">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter your name"
+            android:ems="10"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="137dp"
+            android:id="@+id/enterName"
+            android:visibility="invisible"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:src="@drawable/enterkey"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="77dp"
+            android:id="@+id/buttonSubmitName"
+            android:visibility="gone"/>
+
+        <TextView
+            android:text="The Winner is..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:id="@+id/TextView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/winnerText"
+            android:text="Player"
+            android:textSize="50sp"
+            android:layout_below="@+id/TextView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewScore"
+            android:textSize="120sp"
+            android:layout_below="@+id/winnerText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp" />
+
+        <ImageButton
+            android:src="@drawable/mainmenu"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonMainMenu"
+            android:layout_alignBaseline="@+id/buttonPlayAgain"
+            android:layout_alignBottom="@+id/buttonPlayAgain"
+            android:layout_alignRight="@+id/TextView"
+            android:layout_alignEnd="@+id/TextView"
+            android:visibility="visible"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/replay"
+            android:background="@null"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/buttonPlayAgain"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/TextView"
+            android:layout_alignStart="@+id/TextView" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/highscores"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Scores"
+            android:layout_gravity="center"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="XXXX"
+            android:id="@+id/rank1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="XXXX"
+            android:id="@+id/rank2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="XXXX"
+            android:id="@+id/rank3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="XXXX"
+            android:id="@+id/rank4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="XXXX"
+            android:id="@+id/rank5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="XXXX"
+            android:id="@+id/rank6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="XXXX"
+            android:id="@+id/rank7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="XXXX"
+            android:id="@+id/rank8"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="XXXX"
+            android:id="@+id/rank9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:text="XXXX"
+            android:id="@+id/rank10"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:src="@drawable/arrow"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonContinue"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
